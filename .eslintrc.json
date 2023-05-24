@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "ignorePatterns": ["/node_modules/", "/dist/"],
+  "overrides": [
+    {
+      "files": ["./.eslintrc.js"],
+      "parserOptions": { "project": null },
+      "rules": {}
+    }
+  ],
+  "rules": {
+    // Agrega tus reglas personalizadas aquí
+  }
+}
